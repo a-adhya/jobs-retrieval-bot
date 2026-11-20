@@ -1,0 +1,15 @@
+# Non-secret defaults. Overridden by config.<env>.toml, then environment variables, then command flags.
+
+llm_budget_usd_per_run = 1.00
+max_paid_lookups_per_run = 0
+fixtures_dir = "fixtures"
+previews_dir = "previews"
+
+[limits]
+max_roles = 25
+max_prospects = 5
+
+[http]
+requests_per_second_per_host = 5
+max_retries = 4
+timeout_seconds = 30
